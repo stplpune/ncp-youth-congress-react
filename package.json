@@ -2,6 +2,7 @@
   "name": "elstar",
   "private": true,
   "version": "2.3.0",
+  "homepage": "https://stplpune.github.io/ncp-youth-congress-react",
   "scripts": {
     "start": "vite",
     "build": "vite build",
@@ -10,7 +11,8 @@
     "lint:fix": "npm run lint -- --fix",
     "prettier": "npx prettier src --check",
     "prettier:fix": "npm run prettier -- --write",
-    "format": "npm run prettier:fix && npm run lint:fix"
+    "format": "npm run prettier:fix && npm run lint:fix",
+     "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "@floating-ui/react": "^0.27.2",
@@ -87,6 +89,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.1",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.21",
     "postcss-cli": "^11.0.0",
     "postcss-nesting": "^12.0.2",
