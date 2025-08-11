@@ -14,8 +14,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "noUnusedLocals": true, // added by sj
-    "noUnusedParameters": true,  // added by sj
     "jsx": "react-jsx",
     "paths": {
       "@/*": ["./src/*"]

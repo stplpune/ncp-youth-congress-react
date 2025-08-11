@@ -1,5 +1,5 @@
 export type AppConfig = {
-    apiPrefix: string[] 
+    apiPrefix: string
     authenticatedEntryPath: string
     unAuthenticatedEntryPath: string
     tourPath: string
@@ -8,12 +8,12 @@ export type AppConfig = {
 }
 
 const appConfig: AppConfig = {
-    apiPrefix: ['https://ncpwebservice.ncpyouths.com/Service.asmx/'],
+    apiPrefix: '/api',
     authenticatedEntryPath: '/home',
     unAuthenticatedEntryPath: '/sign-in',
     tourPath: '/',
     locale: 'en',
-    enableMock: false,
+    enableMock: true,
 }
 
 export default appConfig
